@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "services": "Diensten",
+    "work": "Werk",
+    "process": "Aanpak",
+    "pricing": "Prijzen",
+    "contact": "Contact",
+    "cta": "Neem contact op"
+  },
+  "hero": {
+    "badge": "Webontwikkeling · Vlaanderen, BE",
+    "headline1": "Websites die",
+    "headline2": "werken voor jouw bedrijf",
+    "subline": "Ik ontwerp en ontwikkel moderne, snelle en professionele websites — op maat boekingssystemen, beheerpanelen en meer. Gebaseerd in Vlaanderen, wereldwijd actief.",
+    "ctaPrimary": "Gratis offerte",
+    "ctaSecondary": "Bekijk mijn werk",
+    "builtFor": "Gebouwd voor",
+    "stat1Value": "100%",
+    "stat1Label": "Maatwerk code",
+    "stat2Value": "NL/EN",
+    "stat2Label": "Talen",
+    "stat3Value": "24u",
+    "stat3Label": "Reactietijd",
+    "scroll": "Scroll"
+  },
+  "workWith": {
+    "eyebrow": "Wie ik help",
+    "heading": "Ik werk met",
+    "subline": "Lokale bedrijven in Vlaanderen die een website nodig hebben die écht klanten aantrekt — niet alleen er goed uitziet.",
+    "cta": "Jouw sector niet zien?",
+    "ctaLink": "Praat toch met me",
+    "industries": {
+      "barbershops": "Barbershops",
+      "beauty": "Schoonheidssalons",
+      "restaurants": "Restaurants",
+      "gyms": "Sporthallen & Fitness",
+      "wellness": "Wellness & Spa",
+      "tradesmen": "Lokale vaklui"
+    }
+  },
+  "whatIBuild": {
+    "eyebrow": "Diensten",
+    "heading": "Wat ik bouw",
+    "subline": "Alles wat jouw bedrijf online nodig heeft — strak ontworpen, snel gebouwd, klaar voor gebruik.",
+    "services": {
+      "booking": {
+        "title": "Boekingssystemen",
+        "description": "Op maat gemaakte online booking voor jouw bedrijf — diensten, teamleden, tijdslots. Klanten boeken 24/7, jij behoudt de controle."
+      },
+      "admin": {
+        "title": "Beheerpanelen",
+        "description": "Een privé dashboard waar je afspraken beheert, klantgegevens bekijkt en inhoud bijwerkt — geen technische kennis vereist."
+      },
+      "landing": {
+        "title": "Landingspagina's",
+        "description": "Snel, modern en conversiegericht. Gebouwd om een sterke eerste indruk te maken en bezoekers te veranderen in betalende klanten."
+      },
+      "custom": {
+        "title": "Maatwerk functies",
+        "description": "Iets specifieks nodig? Meertalige ondersteuning, loyaliteitssystemen, CMS, aangepaste formulieren — als je het kunt bedenken, bouwen we het."
+  },
+  "portfolio": {
+    "eyebrow": "Portfolio",
+    "heading": "Recent werk",
+    "subline": "Een selectie projecten gebouwd voor lokale bedrijven. Elk op maat — geen sjablonen, geen snelkoppelingen.",
+    "viewLive": "Bekijk live",
+    "comingSoon": "Binnenkort",
+    "screenshotSoon": "Screenshot binnenkort beschikbaar",
+    "demoPrompt": "Wil je een live demo zien van een van deze projecten?",
+    "demoCta": "Demo aanvragen"
+  },
+  "process": {
+    "eyebrow": "Hoe ik werk",
+    "heading": "De aanpak",
+    "subline": "Van eerste bericht tot live website — duidelijke stappen, geen verrassingen.",
+    "readyPrompt": "Klaar om te starten? De eerste stap is gratis.",
+    "cta": "Gratis consultatie boeken"
+  },
+  "testimonials": {
+    "eyebrow": "Getuigenissen",
+    "heading": "Wat klanten zeggen",
+    "subline": "Echte feedback van bedrijven in Vlaanderen.",
+    "placeholder": "* Tijdelijke reviews — vervang door echte feedback voor de lancering."
+  },
+  "pricing": {
+    "eyebrow": "Prijzen",
+    "heading": "Eenvoudige, transparante prijzen",
+    "subline": "Geen verrassingen, geen verborgen kosten. Alle prijzen zijn indicatief — definitieve offerte na gratis consultatie.",
+    "addons": "Extra's",
+    "support": "Maandelijkse ondersteuning",
+    "supportNote": "* 1 maand gratis ondersteuning inbegrepen bij elk project",
+    "consultationCta": "Gratis consultatie",
+    "arrow": "→"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Laten we samenwerken",
+    "subline": "Heb je een project in gedachten? Vertel me over jouw bedrijf en ik neem binnen 24 uur contact op.",
+    "labelEmail": "E-mail",
+    "labelLocation": "Locatie",
+    "labelResponse": "Reactietijd",
+    "available": "Beschikbaar voor nieuwe projecten",
+    "availableNote": "Momenteel nieuwe klanten aannemen in Vlaanderen en op afstand in heel België.",
+    "fieldName": "Jouw naam *",
+    "fieldEmail": "E-mail *",
+    "fieldBusiness": "Bedrijf / sector",
+    "fieldMessage": "Bericht *",
+    "placeholderName": "Jan Janssen",
+    "placeholderEmail": "jan@bedrijf.be",
+    "placeholderBusiness": "bijv. Barbershop in Gent",
+    "placeholderMessage": "Vertel me over jouw project — wat je nodig hebt, je tijdlijn, eventuele vragen...",
+    "send": "Bericht versturen",
+    "sending": "Versturen...",
+    "successTitle": "Bericht verzonden!",
+    "successText": "Bedankt voor je bericht. Ik neem binnen 24 uur contact op.",
+    "successReset": "Nog een bericht sturen"
+  },
+  "footer": {
+    "navigation": "Navigatie",
+    "contact": "Contact",
+    "available": "Beschikbaar voor projecten",
+    "rights": "Alle rechten voorbehouden.",
+    "builtWith": "Gebouwd met Next.js · Tailwind CSS · Framer Motion"
+  }
+  
+}

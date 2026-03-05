@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "services": "Services",
+    "work": "Work",
+    "process": "Process",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "cta": "Let's Talk"
+  },
+  "hero": {
+    "badge": "Web Development · Flanders, BE",
+    "headline1": "Websites that",
+    "headline2": "work for your business",
+    "subline": "I design and develop modern, fast & professional websites — custom booking systems, admin panels and more. Based in Flanders, working globally.",
+    "ctaPrimary": "Get a Free Quote",
+    "ctaSecondary": "View My Work",
+    "builtFor": "Built for",
+    "stat1Value": "100%",
+    "stat1Label": "Custom Code",
+    "stat2Value": "EN/NL",
+    "stat2Label": "Languages",
+    "stat3Value": "24h",
+    "stat3Label": "Response Time",
+    "scroll": "Scroll"
+  },
+  "workWith": {
+    "eyebrow": "Who I Help",
+    "heading": "I Work With",
+    "subline": "Local businesses in Flanders that need a website that actually brings in clients — not just looks good.",
+    "cta": "Don't see your industry?",
+    "ctaLink": "Let's talk anyway",
+    "industries": {
+      "barbershops": "Barbershops",
+      "beauty": "Beauty Salons",
+      "restaurants": "Restaurants",
+      "gyms": "Gyms & Fitness",
+      "wellness": "Wellness & Spa",
+      "tradesmen": "Local Tradesmen"
+    }
+  },
+  "whatIBuild": {
+    "eyebrow": "Services",
+    "heading": "What I Build",
+    "subline": "Everything your business needs online — designed clean, built fast, delivered ready to use.",
+    "services": {
+      "booking": {
+        "title": "Booking Systems",
+        "description": "Custom online booking tailored to your business — services, team members, time slots. Clients book 24/7, you stay in control."
+      },
+      "admin": {
+        "title": "Admin Panels",
+        "description": "A private dashboard where you manage appointments, view client data and update your content — no tech knowledge needed."
+      },
+      "landing": {
+        "title": "Landing Pages",
+        "description": "Fast, modern and conversion-focused. Built to make a strong first impression and turn visitors into paying clients."
+      },
+      "custom": {
+        "title": "Custom Features",
+        "description": "Need something specific? Multi-language support, loyalty systems, CMS, custom forms — if you can imagine it, we build it."
+  },
+  "portfolio": {
+    "eyebrow": "Portfolio",
+    "heading": "Recent Work",
+    "subline": "A selection of projects built for local businesses. Each one custom — no templates, no shortcuts.",
+    "viewLive": "View Live",
+    "comingSoon": "Coming soon",
+    "screenshotSoon": "Screenshot coming soon",
+    "demoPrompt": "Want to see a live demo of any of these?",
+    "demoCta": "Request a Demo"
+  },
+  "process": {
+    "eyebrow": "How I Work",
+    "heading": "The Process",
+    "subline": "From first message to live website — clear steps, no surprises.",
+    "readyPrompt": "Ready to start? The first step is free.",
+    "cta": "Book a Free Consultation"
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "heading": "What Clients Say",
+    "subline": "Real feedback from businesses in Flanders.",
+    "placeholder": "* Placeholder reviews — replace with real client feedback before launch."
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "heading": "Simple, Transparent Pricing",
+    "subline": "No surprises, no hidden fees. All prices are indicative — final quote after a free consultation.",
+    "addons": "Add-ons",
+    "support": "Monthly Support",
+    "supportNote": "* 1 month free support included with every project",
+    "consultationCta": "Free consultation",
+    "arrow": "→"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's Work Together",
+    "subline": "Got a project in mind? Tell me about your business and I'll get back to you within 24 hours.",
+    "labelEmail": "Email",
+    "labelLocation": "Location",
+    "labelResponse": "Response time",
+    "available": "Available for new projects",
+    "availableNote": "Currently taking on new clients in Flanders and remotely across Belgium.",
+    "fieldName": "Your name *",
+    "fieldEmail": "Email *",
+    "fieldBusiness": "Business / Industry",
+    "fieldMessage": "Message *",
+    "placeholderName": "Jan Janssen",
+    "placeholderEmail": "jan@bedrijf.be",
+    "placeholderBusiness": "e.g. Barbershop in Gent",
+    "placeholderMessage": "Tell me about your project — what you need, your timeline, any questions...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message sent!",
+    "successText": "Thanks for reaching out. I'll get back to you within 24 hours.",
+    "successReset": "Send another message"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "available": "Available for projects",
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js · Tailwind CSS · Framer Motion"
+  }
+  
+}
