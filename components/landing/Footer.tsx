@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <a href="#">
               <Image src="/logo.png" alt="FIORD" width={1672} height={511} className="h-7 w-auto" />
-            </a>
+            </a> 
             <p className="text-white/40 text-sm font-mono leading-relaxed max-w-[220px]">
               {footerTagline}
             </p>
