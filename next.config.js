@@ -7,17 +7,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = withNextIntl(nextConfig);
-
-const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,  // ← dodaj to
-  },
-  eslint: {
-    ignoreDuringBuilds: true,  // ← i to dla pewności
-  },
-};
-
-module.exports = nextConfig;
