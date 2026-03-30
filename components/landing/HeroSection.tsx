@@ -5,12 +5,18 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { heroContent, siteOwner } from '@/lib/site.config';
 
-const fadeUp = {
+import { Variants } from 'framer-motion';
+
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: (delay = 0) => ({
+  visible: (delay: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, delay, ease: 'easeOut' },
+    transition: {
+      duration: 0.7,
+      delay,
+      ease: [0.16, 1, 0.3, 1] as const,  // tablica zamiast stringa
+    },
   }),
 };
 
