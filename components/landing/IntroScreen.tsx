@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 type Phase = 'materialize' | 'glow' | 'text' | 'warp' | 'done';
 
@@ -157,9 +158,11 @@ export default function IntroScreen({
               }
               transition={{ duration: 0.7, ease: 'easeOut' }}
             >
-              <img
+              <Image
                 src="/logo.png"
                 alt="FIORD"
+                width={1672} 
+                height={511}
                 className="h-24 w-auto mx-auto mb-6"
                 style={{
                   filter:

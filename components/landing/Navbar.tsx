@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function Navbar() {
   const t = useTranslations('nav');
@@ -44,7 +45,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <img src="/logo.png" alt="FIORD" className="h-8 w-auto" />
+          <Image src="/logo.png" alt="FIORD" width={1672} height={511} className="h-8 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-10">

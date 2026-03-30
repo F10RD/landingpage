@@ -3,6 +3,7 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { siteOwner, footerLinks, footerTagline } from '@/lib/site.config';
+import Image from 'next/image';
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com', label: 'GitHub' },
@@ -29,7 +30,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div className="flex flex-col gap-4">
             <a href="#">
-              <img src="/logo.png" alt="FIORD" className="h-7 w-auto" />
+              <Image src="/logo.png" alt="FIORD" width={1672} height={511} className="h-7 w-auto" />
             </a>
             <p className="text-white/40 text-sm font-mono leading-relaxed max-w-[220px]">
               {footerTagline}
