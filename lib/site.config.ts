@@ -170,15 +170,9 @@ export const portfolioProjects = [
       'Tailwind CSS',
       'Framer Motion',
     ],
-    liveUrl: null as string | null, // ← wstaw URL po deploymencie
+    liveUrl: '/api/demo-access?demo=beauty', // ← wstaw URL po deploymencie
     color: 'blue' as const,
     emoji: '💆‍♀️',
-    images: [
-      { id: 1, placeholder: true, label: 'Homepage', src: undefined },
-      { id: 2, placeholder: true, label: 'Booking Flow', src: undefined },
-      { id: 3, placeholder: true, label: 'Services', src: undefined },
-      { id: 4, placeholder: true, label: 'Confirmation', src: undefined },
-    ],
   },
   {
     id: 2,
@@ -193,15 +187,9 @@ export const portfolioProjects = [
       'Tailwind CSS',
       'Framer Motion',
     ],
-    liveUrl: null as string | null,
+    liveUrl: '/api/demo-access?demo=barber',
     color: 'gold' as const,
     emoji: '💈',
-    images: [
-      { id: 1, placeholder: true, label: 'Homepage', src: undefined },
-      { id: 2, placeholder: true, label: 'Our Barbers', src: undefined },
-      { id: 3, placeholder: true, label: 'Pricing', src: undefined },
-      { id: 4, placeholder: true, label: 'Booking', src: undefined },
-    ],
   },
   {
     id: 3,
@@ -216,29 +204,9 @@ export const portfolioProjects = [
       'Tailwind CSS',
       'Framer Motion',
     ],
-    liveUrl: null as string | null,
+    liveUrl: '/api/demo-access?demo=pro',
     color: 'blue' as const,
     emoji: '🏢',
-    images: [
-      {
-        id: 1,
-        placeholder: false,
-        label: 'Homepage',
-        src: '/landing/YourFirm.png',
-      },
-      {
-        id: 2,
-        placeholder: false,
-        label: 'Services',
-        src: '/landing/YourFirm2.png',
-      },
-      {
-        id: 3,
-        placeholder: false,
-        label: 'Contact & Footer',
-        src: '/landing/YourFirm3.png',
-      },
-    ],
   },
 ];
 
