@@ -58,6 +58,8 @@
       "custom": {
         "title": "Custom Features",
         "description": "Need something specific? Multi-language support, loyalty systems, CMS, custom forms — if you can imagine it, we build it."
+      }
+    }
   },
   "portfolio": {
     "eyebrow": "Portfolio",
@@ -122,5 +124,4 @@
     "rights": "All rights reserved.",
     "builtWith": "Built with Next.js · Tailwind CSS · Framer Motion"
   }
-  
 }
