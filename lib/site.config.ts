@@ -163,14 +163,9 @@ export const portfolioProjects = [
     category: 'Beauty Salon',
     description:
       'Full booking system for a beauty salon — service selection, staff picking, real-time slots and email confirmations. Clean, elegant design built to convert.',
-    tech: [
-      'Next.js 14',
-      'TypeScript',
-      'Supabase',
-      'Tailwind CSS',
-      'Framer Motion',
-    ],
-    liveUrl: '/api/demo-access?demo=beauty', // ← wstaw URL po deploymencie
+    tech: ['Next.js 14', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Framer Motion'],
+    liveUrl: '/api/demo-access?demo=beauty',
+    external: false,
     color: 'blue' as const,
     emoji: '💆‍♀️',
   },
@@ -180,14 +175,9 @@ export const portfolioProjects = [
     category: 'Barber Shop',
     description:
       'Dark, bold barbershop site with online booking, team profiles and pricing. Built for a premium grooming experience with a no-nonsense attitude.',
-    tech: [
-      'Next.js 14',
-      'TypeScript',
-      'Supabase',
-      'Tailwind CSS',
-      'Framer Motion',
-    ],
+    tech: ['Next.js 14', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Framer Motion'],
     liveUrl: '/api/demo-access?demo=barber',
+    external: false,
     color: 'gold' as const,
     emoji: '💈',
   },
@@ -197,16 +187,23 @@ export const portfolioProjects = [
     category: 'Business Landing Page',
     description:
       'Modern, conversion-focused landing page for professional services. Features services section, contact form and a clean corporate aesthetic.',
-    tech: [
-      'Next.js 14',
-      'TypeScript',
-      'Supabase',
-      'Tailwind CSS',
-      'Framer Motion',
-    ],
+    tech: ['Next.js 14', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Framer Motion'],
     liveUrl: '/api/demo-access?demo=pro',
+    external: false,
     color: 'blue' as const,
     emoji: '🏢',
+  },
+  {
+    id: 4,
+    title: 'Zeniula.pl',
+    category: 'UGC Creator Portfolio',
+    description:
+      'Personal portfolio for a UGC content creator — clean, modern one-pager showcasing video work, brand collaborations and services. Built for conversion with smooth animations and a contact section.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    liveUrl: 'https://zeniula.pl',
+    external: true,
+    color: 'blue' as const,
+    emoji: '🎬',
   },
 ];
 

@@ -19,15 +19,16 @@ export default function PortfolioSection() {
     ? 'rgba(245,166,35,0.06)'
     : 'rgba(33,80,199,0.08)';
 
+  const ctaProps = project.external
+    ? { target: '_blank', rel: 'noopener noreferrer' }
+    : {};
+
   return (
     <section
       id="work"
       className="relative bg-galaxy-black py-24 px-6 overflow-hidden"
     >
-      {/* Top separator */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-
-      {/* Background glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] pointer-events-none"
         style={{
@@ -87,12 +88,9 @@ export default function PortfolioSection() {
             transition={{ duration: 0.35, ease: 'easeOut' }}
             className={`border ${accentBorder} overflow-hidden bg-galaxy-black relative`}
           >
-            {/* Accent glow top bar */}
             <div
               className={`h-px w-full bg-gradient-to-r from-transparent ${isGold ? 'via-galaxy-gold/50' : 'via-galaxy-blue-light/50'} to-transparent`}
             />
-
-            {/* Inner glow */}
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
@@ -102,7 +100,7 @@ export default function PortfolioSection() {
 
             <div className="relative p-8 md:p-12">
 
-              {/* Top row — emoji + category + CTA */}
+              {/* Top row */}
               <div className="flex items-start justify-between gap-6 mb-8">
                 <div className="flex items-center gap-4">
                   <div className={`w-14 h-14 flex items-center justify-center text-3xl border ${accentBorder} ${accentBg}`}>
@@ -120,6 +118,7 @@ export default function PortfolioSection() {
 
                 <a
                   href={project.liveUrl}
+                  {...ctaProps}
                   className={`hidden md:inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 border transition-all duration-300
                     ${isGold
                       ? 'border-galaxy-gold/40 text-galaxy-gold-light hover:bg-galaxy-gold/10'
@@ -127,19 +126,16 @@ export default function PortfolioSection() {
                     }`}
                 >
                   <ExternalLink size={14} />
-                  {t('viewLive')}
+                  {project.external ? t('visitSite') : t('viewLive')}
                 </a>
               </div>
 
-              {/* Description */}
               <p className="text-white/70 text-base leading-relaxed max-w-2xl mb-8">
                 {project.description}
               </p>
 
-              {/* Divider */}
               <div className="border-t border-white/5 mb-8" />
 
-              {/* Tech stack + mobile CTA */}
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
@@ -152,9 +148,9 @@ export default function PortfolioSection() {
                   ))}
                 </div>
 
-                {/* Mobile CTA */}
                 <a
                   href={project.liveUrl}
+                  {...ctaProps}
                   className={`md:hidden inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 border transition-all duration-300
                     ${isGold
                       ? 'border-galaxy-gold/40 text-galaxy-gold-light hover:bg-galaxy-gold/10'
@@ -162,7 +158,7 @@ export default function PortfolioSection() {
                     }`}
                 >
                   <ExternalLink size={14} />
-                  {t('viewLive')}
+                  {project.external ? t('visitSite') : t('viewLive')}
                 </a>
               </div>
             </div>
