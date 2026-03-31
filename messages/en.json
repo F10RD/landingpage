@@ -76,7 +76,37 @@
     "heading": "The Process",
     "subline": "From first message to live website — clear steps, no surprises.",
     "readyPrompt": "Ready to start? The first step is free.",
-    "cta": "Book a Free Consultation"
+    "cta": "Book a Free Consultation",
+    "steps": {
+      "discovery": {
+        "title": "Discovery",
+        "description": "We start with a free consultation — you tell me about your business, goals and vision. I ask the right questions to understand exactly what you need.",
+        "d1": "Free 30-min call",
+        "d2": "Requirements scoping",
+        "d3": "Timeline & budget"
+      },
+      "design": {
+        "title": "Design",
+        "description": "I create a visual direction based on your brand. You see exactly what the site will look like before a single line of code is written.",
+        "d1": "Moodboard & palette",
+        "d2": "Layout mockup",
+        "d3": "Your feedback & approval"
+      },
+      "build": {
+        "title": "Build",
+        "description": "Once design is approved, I build the full site — fast, clean code, mobile-first. You get progress updates throughout.",
+        "d1": "Next.js & Tailwind",
+        "d2": "Mobile responsive",
+        "d3": "Weekly updates"
+      },
+      "launch": {
+        "title": "Launch",
+        "description": "We test everything, connect your domain and go live. I stay available for 1 month after launch to fix anything that comes up.",
+        "d1": "Domain setup",
+        "d2": "Final QA testing",
+        "d3": "1 month free support"
+      }
+    }
   },
   "testimonials": {
     "eyebrow": "Testimonials",
@@ -92,7 +122,56 @@
     "support": "Monthly Support",
     "supportNote": "* 1 month free support included with every project",
     "consultationCta": "Free consultation",
-    "arrow": "→"
+    "arrow": "→",
+    "from": "from",
+"popular": "POPULAR",
+"note": "1 month free support included with every project. Domain & hosting on your side (~€10–15/yr + Vercel).",
+"packages": {
+  "starter": {
+    "name": "Starter",
+    "description": "Perfect for small businesses that need a clean, fast landing page.",
+    "f1": "Custom landing page",
+    "f2": "Mobile responsive",
+    "f3": "Contact form",
+    "f4": "SEO basics",
+    "f5": "1 month support",
+    "cta": "Get Started"
+  },
+  "business": {
+    "name": "Business",
+    "description": "Full booking system with admin panel. The most popular choice.",
+    "f1": "Everything in Starter",
+    "f2": "Online booking system",
+    "f3": "Admin dashboard",
+    "f4": "Email confirmations",
+    "f5": "1 month support",
+    "cta": "Most Popular"
+  },
+  "custom": {
+    "name": "Custom",
+    "description": "Multi-language, CMS, loyalty systems or anything specific to your business.",
+    "f1": "Everything in Business",
+    "f2": "EN/NL or custom language",
+    "f3": "CMS integration",
+    "f4": "Custom features",
+    "f5": "Priority support",
+    "cta": "Let's Talk"
+  }
+},
+"addonItems": {
+  "language": "Extra language (EN/NL)",
+  "subpage": "Extra subpage"
+},
+"supportTiers": {
+  "basic": {
+    "name": "Basic support",
+    "p1": "Bug fixes, minor updates"
+  },
+  "standard": {
+    "name": "Standard support",
+    "p1": "Updates, content changes, priority response"
+  }
+}
   },
   "contact": {
     "eyebrow": "Contact",

@@ -89,74 +89,70 @@ export const testimonialsArePlaceholder = true;
 // ─────────────────────────────────────────
 export const pricingPackages = [
   {
-    name: 'Starter',
+    nameKey: 'packages.starter.name',
+    color: 'blue',
     price: 500,
-    description:
-      'Perfect for small businesses that need a clean, fast landing page.',
-    features: [
-      'Custom landing page',
-      'Mobile responsive',
-      'Contact form',
-      'SEO basics',
-      '1 month support',
+    descriptionKey: 'packages.starter.description',
+    featureKeys: [
+      'packages.starter.f1',
+      'packages.starter.f2',
+      'packages.starter.f3',
+      'packages.starter.f4',
+      'packages.starter.f5',
     ],
-    cta: 'Get Started',
+    ctaKey: 'packages.starter.cta',
     highlighted: false,
   },
   {
-    name: 'Business',
+    nameKey: 'packages.business.name',
+    color: 'magenta',
     price: 1000,
-    description:
-      'Full booking system with admin panel. The most popular choice.',
-    features: [
-      'Everything in Starter',
-      'Online booking system',
-      'Admin dashboard',
-      'Email confirmations',
-      '1 month support',
+    descriptionKey: 'packages.business.description',
+    featureKeys: [
+      'packages.business.f1',
+      'packages.business.f2',
+      'packages.business.f3',
+      'packages.business.f4',
+      'packages.business.f5',
     ],
-    cta: 'Most Popular',
+    ctaKey: 'packages.business.cta',
     highlighted: true,
   },
   {
-    name: 'Custom',
+    nameKey: 'packages.custom.name',
+    color: 'gold',
     price: 1500,
     pricePrefix: 'from',
-    description:
-      'Multi-language, CMS, loyalty systems or anything specific to your business.',
-    features: [
-      'Everything in Business',
-      'EN/NL or custom language',
-      'CMS integration',
-      'Custom features',
-      'Priority support',
+    descriptionKey: 'packages.custom.description',
+    featureKeys: [
+      'packages.custom.f1',
+      'packages.custom.f2',
+      'packages.custom.f3',
+      'packages.custom.f4',
+      'packages.custom.f5',
     ],
-    cta: "Let's Talk",
+    ctaKey: 'packages.custom.cta',
     highlighted: false,
   },
 ];
 
 export const pricingAddons = [
-  { name: 'Extra language (EN/NL)', price: '€100–150' },
-  { name: 'Extra subpage', price: '€80–150' },
+  { labelKey: 'addonItems.language', price: '€100–150' },
+  { labelKey: 'addonItems.subpage', price: '€80–150' },
 ];
 
 export const pricingSupport = [
   {
-    name: 'Basic support',
+    nameKey: 'supportTiers.basic.name',
     price: '€40/mo',
-    perks: ['Bug fixes, minor updates'],
+    perkKeys: ['supportTiers.basic.p1'],
   },
   {
-    name: 'Standard support',
+    nameKey: 'supportTiers.standard.name',
     price: '€90/mo',
-    perks: ['Updates, content changes, priority response'],
+    perkKeys: ['supportTiers.standard.p1'],
   },
 ];
-
-export const pricingNote =
-  '1 month free support included with every project. Domain & hosting on your side (~€10–15/yr + Vercel).';
-
 // ─────────────────────────────────────────
 //  PORTFOLIO / DEMO LAYOUTS
 // ─────────────────────────────────────────
@@ -252,39 +248,47 @@ export const portfolioProjects = [
 export const processSteps = [
   {
     number: '01',
-    title: 'Discovery',
-    description:
-      'We start with a free consultation — you tell me about your business, goals and vision. I ask the right questions to understand exactly what you need.',
+    titleKey: 'steps.discovery.title',
+    descriptionKey: 'steps.discovery.description',
     accent: 'blue' as const,
-    details: ['Free 30-min call', 'Requirements scoping', 'Timeline & budget'],
+    detailKeys: [
+      'steps.discovery.d1',
+      'steps.discovery.d2',
+      'steps.discovery.d3',
+    ],
   },
   {
     number: '02',
-    title: 'Design',
-    description:
-      'I create a visual direction based on your brand. You see exactly what the site will look like before a single line of code is written.',
+    titleKey: 'steps.design.title',
+    descriptionKey: 'steps.design.description',
     accent: 'magenta' as const,
-    details: [
-      'Moodboard & palette',
-      'Layout mockup',
-      'Your feedback & approval',
+    detailKeys: [
+      'steps.design.d1',
+      'steps.design.d2',
+      'steps.design.d3',
     ],
   },
   {
     number: '03',
-    title: 'Build',
-    description:
-      'Once design is approved, I build the full site — fast, clean code, mobile-first. You get progress updates throughout.',
+    titleKey: 'steps.build.title',
+    descriptionKey: 'steps.build.description',
     accent: 'gold' as const,
-    details: ['Next.js & Tailwind', 'Mobile responsive', 'Weekly updates'],
+    detailKeys: [
+      'steps.build.d1',
+      'steps.build.d2',
+      'steps.build.d3',
+    ],
   },
   {
     number: '04',
-    title: 'Launch',
-    description:
-      'We test everything, connect your domain and go live. I stay available for 1 month after launch to fix anything that comes up.',
+    titleKey: 'steps.launch.title',
+    descriptionKey: 'steps.launch.description',
     accent: 'blue' as const,
-    details: ['Domain setup', 'Final QA testing', '1 month free support'],
+    detailKeys: [
+      'steps.launch.d1',
+      'steps.launch.d2',
+      'steps.launch.d3',
+    ],
   },
 ];
 

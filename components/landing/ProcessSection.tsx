@@ -106,21 +106,21 @@ export default function ProcessSection() {
                       {step.number}
                     </div>
                     <h3 className="font-heading text-white text-2xl font-bold mb-3">
-                      {step.title}
+                      {t(step.titleKey as Parameters<typeof t>[0])}
                     </h3>
                     <p className="text-white/60 text-sm leading-relaxed mb-6">
-                      {step.description}
+                      {t(step.descriptionKey as Parameters<typeof t>[0])}
                     </p>
                     <ul className="flex flex-col gap-2">
-                      {step.details.map((detail) => (
+                      {step.detailKeys.map((dKey) => (
                         <li
-                          key={detail}
+                          key={dKey}
                           className="flex items-center gap-3 text-sm text-white/50"
                         >
                           <span
                             className={`w-1 h-1 flex-shrink-0 ${dotColor}`}
                           />
-                          {detail}
+                          {t(dKey as Parameters<typeof t>[0])}
                         </li>
                       ))}
                     </ul>

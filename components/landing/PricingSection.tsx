@@ -7,7 +7,6 @@ import {
   pricingPackages,
   pricingAddons,
   pricingSupport,
-  pricingNote,
 } from '@/lib/site.config';
 
 const cardVariants = {
@@ -31,16 +30,14 @@ export default function PricingSection() {
       <div
         className="absolute top-1/3 right-0 w-[500px] h-[500px] pointer-events-none"
         style={{
-          background:
-            'radial-gradient(ellipse, rgba(233,30,140,0.07) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(233,30,140,0.07) 0%, transparent 70%)',
           filter: 'blur(60px)',
         }}
       />
       <div
         className="absolute bottom-0 left-0 w-[400px] h-[400px] pointer-events-none"
         style={{
-          background:
-            'radial-gradient(ellipse, rgba(33,80,199,0.07) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(33,80,199,0.07) 0%, transparent 70%)',
           filter: 'blur(60px)',
         }}
       />
@@ -91,12 +88,12 @@ export default function PricingSection() {
             const priceDisplay =
               typeof plan.price === 'number' ? `€${plan.price}` : plan.price;
             const fullPrice = plan.pricePrefix
-              ? `${plan.pricePrefix} ${priceDisplay}`
+              ? `${t('from')} ${priceDisplay}`
               : priceDisplay;
 
             return (
               <motion.div
-                key={plan.name}
+                key={plan.nameKey}
                 custom={i}
                 variants={cardVariants}
                 initial="hidden"
@@ -113,32 +110,24 @@ export default function PricingSection() {
                   <div className="absolute top-4 right-4 flex items-center gap-1 border border-galaxy-magenta/40 bg-galaxy-magenta/10 px-2 py-0.5">
                     <Zap size={10} className="text-galaxy-magenta-light" />
                     <span className="text-galaxy-magenta-light text-xs font-mono tracking-widest">
-                      POPULAR
+                      {t('popular')}
                     </span>
                   </div>
                 )}
-                <div
-                  className={`text-xs font-mono tracking-widest uppercase mb-4 ${accentText}`}
-                >
-                  {plan.name}
+                <div className={`text-xs font-mono tracking-widest uppercase mb-4 ${accentText}`}>
+                  {t(plan.nameKey)}
                 </div>
                 <div className="font-heading text-3xl font-bold text-white mb-2">
                   {fullPrice}
                 </div>
                 <p className="text-white/50 text-sm leading-relaxed mb-8 min-h-[60px]">
-                  {plan.description}
+                  {t(plan.descriptionKey)}
                 </p>
                 <ul className="flex flex-col gap-3 mb-10 flex-1">
-                  {plan.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="flex items-start gap-3 text-sm text-white/70"
-                    >
-                      <Check
-                        size={14}
-                        className={`mt-0.5 flex-shrink-0 ${accentText}`}
-                      />
-                      {feature}
+                  {plan.featureKeys.map((fKey) => (
+                    <li key={fKey} className="flex items-start gap-3 text-sm text-white/70">
+                      <Check size={14} className={`mt-0.5 flex-shrink-0 ${accentText}`} />
+                      {t(fKey)}
                     </li>
                   ))}
                 </ul>
@@ -151,7 +140,7 @@ export default function PricingSection() {
                         : `bg-transparent ${accentText} ${accentBorder} ${accentBg} hover:border-opacity-60`
                     }`}
                 >
-                  {plan.cta} {t('arrow')}
+                  {t(plan.ctaKey)} {t('arrow')}
                 </a>
               </motion.div>
             );
@@ -172,13 +161,11 @@ export default function PricingSection() {
             <ul className="flex flex-col gap-4">
               {pricingAddons.map((addon) => (
                 <li
-                  key={addon.label}
+                  key={addon.labelKey}
                   className="flex items-center justify-between border-b border-white/5 pb-4 last:border-0 last:pb-0"
                 >
-                  <span className="text-white/60 text-sm">{addon.label}</span>
-                  <span className="text-white font-mono text-sm">
-                    {addon.price}
-                  </span>
+                  <span className="text-white/60 text-sm">{t(addon.labelKey)}</span>
+                  <span className="text-white font-mono text-sm">{addon.price}</span>
                 </li>
               ))}
             </ul>
@@ -196,23 +183,20 @@ export default function PricingSection() {
             </div>
             <div className="flex flex-col gap-4">
               {pricingSupport.map((tier) => (
-                <div key={tier.name} className="border border-white/10 p-4">
+                <div key={tier.nameKey} className="border border-white/10 p-4">
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-white font-heading font-semibold">
-                      {tier.name}
+                      {t(tier.nameKey)}
                     </span>
                     <span className="text-galaxy-gold-light font-mono text-sm">
                       {tier.price}
                     </span>
                   </div>
                   <ul className="flex flex-col gap-1">
-                    {tier.perks.map((perk) => (
-                      <li
-                        key={perk}
-                        className="text-white/50 text-xs flex items-center gap-2"
-                      >
+                    {tier.perkKeys.map((pKey) => (
+                      <li key={pKey} className="text-white/50 text-xs flex items-center gap-2">
                         <span className="w-1 h-1 bg-galaxy-gold/60 flex-shrink-0" />
-                        {perk}
+                        {t(pKey)}
                       </li>
                     ))}
                   </ul>
@@ -233,7 +217,7 @@ export default function PricingSection() {
           className="mt-8 border border-white/5 p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-3"
         >
           <p className="text-white/40 text-xs font-mono leading-relaxed">
-            {pricingNote}
+            {t('note')}
           </p>
           <a
             href="#contact"

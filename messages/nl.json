@@ -76,7 +76,37 @@
     "heading": "De aanpak",
     "subline": "Van eerste bericht tot live website — duidelijke stappen, geen verrassingen.",
     "readyPrompt": "Klaar om te starten? De eerste stap is gratis.",
-    "cta": "Gratis consultatie boeken"
+    "cta": "Gratis consultatie boeken",
+    "steps": {
+      "discovery": {
+        "title": "Ontdekking",
+        "description": "We beginnen met een gratis consultatie — jij vertelt me over jouw bedrijf, doelen en visie. Ik stel de juiste vragen om precies te begrijpen wat je nodig hebt.",
+        "d1": "Gratis 30 min gesprek",
+        "d2": "Vereisten in kaart brengen",
+        "d3": "Tijdlijn & budget"
+      },
+      "design": {
+        "title": "Ontwerp",
+        "description": "Ik creëer een visuele richting gebaseerd op jouw merk. Je ziet precies hoe de site eruit zal zien voordat één regel code is geschreven.",
+        "d1": "Moodboard & kleurenpalet",
+        "d2": "Layout mockup",
+        "d3": "Jouw feedback & goedkeuring"
+      },
+      "build": {
+        "title": "Bouwen",
+        "description": "Zodra het ontwerp is goedgekeurd, bouw ik de volledige site — snelle, nette code, mobile-first. Je krijgt doorlopend updates.",
+        "d1": "Next.js & Tailwind",
+        "d2": "Mobielvriendelijk",
+        "d3": "Wekelijkse updates"
+      },
+      "launch": {
+        "title": "Lancering",
+        "description": "We testen alles, koppelen jouw domein en gaan live. Ik blijf 1 maand na de lancering beschikbaar om alles op te lossen.",
+        "d1": "Domein instellen",
+        "d2": "Definitief QA-testen",
+        "d3": "1 maand gratis ondersteuning"
+      }
+    }
   },
   "testimonials": {
     "eyebrow": "Getuigenissen",
@@ -92,7 +122,56 @@
     "support": "Maandelijkse ondersteuning",
     "supportNote": "* 1 maand gratis ondersteuning inbegrepen bij elk project",
     "consultationCta": "Gratis consultatie",
-    "arrow": "→"
+    "arrow": "→",
+    "from": "vanaf",
+"popular": "POPULAIR",
+"note": "1 maand gratis ondersteuning inbegrepen bij elk project. Domein & hosting voor jouw rekening (~€10–15/jr + Vercel).",
+"packages": {
+  "starter": {
+    "name": "Starter",
+    "description": "Perfect voor kleine bedrijven die een strakke, snelle landingspagina nodig hebben.",
+    "f1": "Maatwerk landingspagina",
+    "f2": "Mobielvriendelijk",
+    "f3": "Contactformulier",
+    "f4": "SEO basis",
+    "f5": "1 maand ondersteuning",
+    "cta": "Aan de slag"
+  },
+  "business": {
+    "name": "Business",
+    "description": "Volledig boekingssysteem met beheerpaneel. De meest populaire keuze.",
+    "f1": "Alles uit Starter",
+    "f2": "Online boekingssysteem",
+    "f3": "Beheerdashboard",
+    "f4": "E-mailbevestigingen",
+    "f5": "1 maand ondersteuning",
+    "cta": "Meest populair"
+  },
+  "custom": {
+    "name": "Custom",
+    "description": "Meertalig, CMS, loyaliteitssystemen of iets specifieks voor jouw bedrijf.",
+    "f1": "Alles uit Business",
+    "f2": "NL/EN of eigen taal",
+    "f3": "CMS-integratie",
+    "f4": "Maatwerk functies",
+    "f5": "Prioriteitsondersteuning",
+    "cta": "Laten we praten"
+  }
+},
+"addonItems": {
+  "language": "Extra taal (NL/EN)",
+  "subpage": "Extra subpagina"
+},
+"supportTiers": {
+  "basic": {
+    "name": "Basis ondersteuning",
+    "p1": "Bugfixes, kleine updates"
+  },
+  "standard": {
+    "name": "Standaard ondersteuning",
+    "p1": "Updates, inhoudswijzigingen, prioriteitsrespons"
+  }
+}
   },
   "contact": {
     "eyebrow": "Contact",
