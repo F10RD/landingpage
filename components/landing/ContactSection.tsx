@@ -40,12 +40,22 @@ export default function ContactSection() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormState('sending');
-    // TODO: podłącz Resend
-    await new Promise((r) => setTimeout(r, 1500));
-    setFormState('success');
-  };
+    e.preventDefault()
+    setFormState('sending')
+  
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+  
+      if (!res.ok) throw new Error('Failed')
+      setFormState('success')
+    } catch {
+      setFormState('error')
+    }
+  }
 
   const infoItems = [
     {
