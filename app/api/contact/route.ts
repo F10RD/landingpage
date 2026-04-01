@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
 
     // Powiadomienie do Ciebie
     await sendEmail(
-      'fiord@byfiord.dev', // ← WPISZ SWÓJ EMAIL
+      'contact@byfiord.dev', // ← WPISZ SWÓJ EMAIL
       `New contact: ${name} — ${business || 'no business'}`,
       `
         <h2>New message from FIORD contact form</h2>
